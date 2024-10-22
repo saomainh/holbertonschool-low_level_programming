@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * hello_puts - prints a quote
+ * main - prints a quote
  *
- * Description : prints a single line using puts
- * Return : 0 if it works
+ * Description: prints a single line using puts
+ * Return: 0 if it works
  */
 int main(void)
 {
