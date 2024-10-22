@@ -3,7 +3,7 @@
 /**
  * main - prints size of types
  *
- * Description: prints the size of various types depending on the computer it is compiled and run on
+ * Description: prints the size of various types depending on the computer
  * Return: 0 if it works
  */
 int main(void)
