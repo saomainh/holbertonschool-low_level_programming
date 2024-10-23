@@ -13,8 +13,8 @@ int main(void)
 char ch = 97;
 char space = '\n';
 for (ch = 97; ch <= 122; ch++)
-  if (ch != 101 && ch != 113)
-    putchar(ch);
+if (ch != 101 && ch != 113)
+putchar(ch);
 putchar(space);
 return (0);
 }
