@@ -14,8 +14,8 @@ int n = 0;
 for (n = 0; n <= 8; n++){
 putchar(48 + n);
 putchar(',');
+putchar(' ');
 }
 putchar(48 + 9);
-putchar('\n');
 return (0);
 }
