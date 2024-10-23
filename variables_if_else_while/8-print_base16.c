@@ -10,11 +10,12 @@
  */
 int main(void)
 {
-int i; 
-for(i = 0; i < 17 ; i++){
-putchar((i/10)+'0');
-putchar((i%10)+'0');
-printf("\n");
-}
+char number = 48; 
+char ch = 97;
+for (number = 48; number <= 57; number++)
+	putchar(number);
+for (ch = 97; ch <= 102; ch++)
+	putchar(ch);
+putchar('\n');
 return (0);
 }
