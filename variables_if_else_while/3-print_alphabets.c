@@ -15,7 +15,7 @@ char alphabet_uppercase = 65;
 char space = '\n';
 for (alphabet_lowercase = 97; alphabet_lowercase <= 122; alphabet_lowercase++)
 putchar(alphabet_lowercase);
-for (alphabet_uppercase = 65; alphabet_uppercase <= 89; alphabet_uppercase++)
+for (alphabet_uppercase = 65; alphabet_uppercase <= 90; alphabet_uppercase++)
 putchar(alphabet_uppercase);
 putchar(space);
 return (0);
