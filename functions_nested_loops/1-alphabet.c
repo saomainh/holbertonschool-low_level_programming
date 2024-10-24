@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *main - print random number and if positive or negative
+ *print_alphabet - it just prints the alphabet
  *
  *Description : /
- *Return: 0 if it worked
+ *Return: no return
  */
 
 void print_alphabet(void)
