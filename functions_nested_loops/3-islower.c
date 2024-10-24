@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *print_alphabet_x10 - it just prints the alphabet x10
- *
+ *_islower - it just prints the alphabet x10
+ *@c: letter to test
  *Description : /
  *Return: no return
  */
