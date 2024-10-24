@@ -8,7 +8,7 @@
  * Return: 0 if it works
  */
 
-Int main(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
