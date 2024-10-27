@@ -1,20 +1,27 @@
 #include "main.h"
 
 /**
- *print_last_digit - bsolute value of a number
- *@n: number  to test
+ *jack_bauer - bsolute value of a number
+ *
  *Description : /
  *Return: absolute value of n
  */
 
 void jack_bauer(void)
 {
+	int heures;
 	int minutes;
-	for (minutes = 0; minutes <= 59; minutes++)
+
+	for (heures = 0; heures <= 24; heures++)
 	{
-		
-		_putchar(i / 10 + '0');
-		_putchar(i % 10 + '0');
-		_putchar('\n');
+		for (minutes = 0; minutes <= 59; minutes++)
+		{
+			_putchar(heures / 10 + '0');
+			_putchar(heures % 10 + '0');
+			_putchar(':');
+			_putchar(minutes / 10 + '0');
+			_putchar(minutes % 10 + '0');
+			_putchar('\n');
+		}
 	}
 }
