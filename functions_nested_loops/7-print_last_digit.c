@@ -16,7 +16,7 @@ int print_last_digit(int n)
 	{
 		n++;
 		n = -n;
-		buffer = 1:
+		buffer = 1;
 	}
 	else
 	{
