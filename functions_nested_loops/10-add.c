@@ -1,20 +1,15 @@
 #include "main.h"
 
 /**
- *print_last_digit - bsolute value of a number
- *@n: number  to test
+ *times_table - bsolute value of a number
+ *@a : first number to add
+ *@b : second number to add
  *Description : /
- *Return: absolute value of n
+ *Return: result
  */
 
-int add(int, int)
+int add(int a, int b)
 {
-	int minutes;
-	for (minutes = 0; minutes <= 59; minutes++)
-	{
-		
-		_putchar(i / 10 + '0');
-		_putchar(i % 10 + '0');
-		_putchar('\n');
-	}
-}
+	int result = a + b;
+	return (result);
+}	
