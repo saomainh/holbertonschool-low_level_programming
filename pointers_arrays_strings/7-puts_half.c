@@ -26,7 +26,7 @@ void puts_half(char *str)
 	{
 		i = (count - 1) / 2;
 	}
-	if (i<200)
+	if (i>200)
 	{
 		i++;
 	}
