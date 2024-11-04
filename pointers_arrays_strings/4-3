@@ -12,27 +12,19 @@
 
 void print_rev(char *s)
 {
-	char *end = s;
-	char *start = s;
+	int count = 0;
 	char temp;
-
-	while (*end != '\0')
+	
+	while (*s != '\0')
 	{
-		end++;
+		count++;
+		s++;
 	}
-	end--;
-	while(start < end)
+	while (count > 0)
 	{
-		temp = *start;
-		*start = *end;
-		*end = temp;
-		start++;
-		end--;
+		temp = s[count];
+		_putchar(temp);
+		count--;
 	}
-	free(start);
-	free(end);
-	printf("%s", s);	
 	_putchar('\n');
-	return;
-
 }

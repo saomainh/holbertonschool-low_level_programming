@@ -28,11 +28,6 @@ void print_rev(char *s)
 		*end = temp;
 		start++;
 		end--;
-	}
-	free(start);
-	free(end);
-	printf("%s", s);	
+	}	
 	_putchar('\n');
-	return;
-
 }
