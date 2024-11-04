@@ -2,7 +2,7 @@
 #include "stddef.h"
 
 /**
- *puts2 - it just prints the alphabet
+ *puts_half - it just prints the alphabet
  *@str : eaofhezui
  *Description : /
  *Return: no return
@@ -26,17 +26,15 @@ void puts_half(char *str)
 	{
 		i = (count - 1) / 2;
 	}
-	if (i>200)
+	if (i > 200)
 	{
 		i++;
 	}
-	
+
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
 		i++;
 	}
-	_putchar('\n');}
-
-
- 
+	_putchar('\n');
+}
