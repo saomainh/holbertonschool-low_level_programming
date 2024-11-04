@@ -12,7 +12,6 @@ void puts_half(char *str)
 {
 	int i = 0;
 	int count = 0;
-	int midlenght;
 
 	while (str[i] != str[-1])
 	{
@@ -21,13 +20,10 @@ void puts_half(char *str)
 	}
 	if (count % 2 != 0)
 	{
-		midlenght = (count - 1) / 2;
+		count--;
+		_putchar('.');
 	}
-	else
-	{
-		midlenght = count / 2;
-	}	
-	for (i = midlenght; i < count; i++)
+	for (i = count / 2; i < count; i++)
 	{
 		_putchar(str[i]);
 	}

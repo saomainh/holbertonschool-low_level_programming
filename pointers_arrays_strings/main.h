@@ -1,3 +1,4 @@
+void rev_string(char *s);
 void puts_half(char *str);
 void puts2(char *str);
 void print_rev(char *s);
