@@ -1,8 +1,8 @@
 #include "main.h"
 #include "stddef.h"
 /**
- *print_rev - it just prints the alphabet
- *@s : eaofhezui
+ *puts2 - it just prints the alphabet
+ *@str : eaofhezui
  *Description : /
  *Return: no return
  */
