@@ -1,18 +1,25 @@
 #include "main.h"
-
+#include "stddef.h"
 /**
- *_puts - it just prints the alphabet
- *@str : eaofhezui
+ *print_rev - it just prints the alphabet
+ *@s : eaofhezui
  *Description : /
  *Return: no return
  */
 
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int i = 0;
+	int count = 0;
+
+	while (str[i] != str[-1])
 	{
-		_putchar(*str);
-	    str = str + 2;	
+		count++;
+		i++;
+	}
+	for (i = 0; i < count; i = i + 2)
+	{
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
