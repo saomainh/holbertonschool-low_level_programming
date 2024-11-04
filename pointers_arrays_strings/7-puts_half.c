@@ -26,10 +26,17 @@ void puts_half(char *str)
 	{
 		i = (count - 1) / 2;
 	}
+	if (i<200)
+	{
+		i++;
+	}
+	
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
 		i++;
 	}
-	_putchar('\n');
-}
+	_putchar('\n');}
+
+
+ 
