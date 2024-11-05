@@ -1,8 +1,5 @@
 #include "main.h"
 #include "stddef.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
  *print_rev - it just prints the alphabet
  *@s : eaofhezui
@@ -12,22 +9,17 @@
 
 void print_rev(char *s)
 {
-	char *end = s;
-	char *start = s;
-	char temp;
+	int i = 0;
+	int count = 0;
 
-	while (*end != '\0')
+	while (s != NULL)
 	{
-		end++;
+	 
+		i++;
 	}
-	end--;
-	while(start < end)
+	for (i = count - 1; i > 0 - 1; i--)
 	{
-		temp = *start;
-		*start = *end;
-		*end = temp;
-		start++;
-		end--;
-	}	
+		_putchar(s[i]);
+	}
 	_putchar('\n');
 }
