@@ -35,17 +35,15 @@ int _len(char *str)
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
-
-	dest = dest + _len(dest);
-
+	int og_len = _len(dest);
+	
 	for (i = 0; i < n; i++)
 	{
 		if (*src == '\0')
 		{
 			break;
 		}
-		*dest = *src;
-		dest++;
+		dest[i+og_len] = *src;
 		src++;
 	}
 
