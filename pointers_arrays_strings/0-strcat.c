@@ -13,13 +13,12 @@
 
 int _len(char *str)
 {
-	int i = 0;
 	int count = 0;
 	
-	while (str[i] != str[-1])
+	while (*str != '\0')
 	{
 		count++;
-		i++;
+		str++;
 	}
 
 	return (count);
@@ -29,11 +28,12 @@ char *_strcat(char *dest, char *src)
 {
 	int i;
 
-	for (i = _len(src) - 1; i < _len(src) - 1 + _len(dest); i++)
+	for (i = _len(dest) - 1; i < _len(src) - 1 + _len(dest); i++)
 	{
-		dest[i] = *src;
+		dest[i+1] = *src;
 		src++;
 	}
 
 	return (dest);
 }
+ 
