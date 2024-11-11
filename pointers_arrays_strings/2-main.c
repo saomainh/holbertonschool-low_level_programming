@@ -24,6 +24,11 @@ int main(void)
     ptr = _strncpy(s1, "First, solve the problem. Then, write the code\n", 90);
     printf("%s", s1);
     printf("%s", ptr);
+	printf(".\n");
+    ptr = _strncpy(s1, "", 4);
+    printf("%s", s1);
+    printf("%s", ptr);
+	printf(".\n");
     for (i = 0; i < 98; i++)
     {
         if (i % 10)
