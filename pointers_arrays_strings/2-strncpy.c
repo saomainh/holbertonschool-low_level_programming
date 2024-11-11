@@ -35,15 +35,15 @@ int _len(char *str)
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
-	int og_len = _len(dest);
+	/*int og_len = _len(dest);*/
 	
 	for (i = 0; i < n; i++)
 	{
 		if (*src == '\0')
 		{
-			break;
+		    dest[i] = '\0';
 		}
-		dest[i+og_len] = *src;
+		dest[i] = *src;
 		src++;
 	}
 
