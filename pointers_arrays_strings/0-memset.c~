@@ -1,0 +1,22 @@
+#include "main.h"
+#include "stddef.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *_len - finds the lenght of a string
+ *@str : eafear
+ *Description : /
+ *Return: count
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+	for (i = 0; i < n; i++)
+	{
+		printf(".");
+		s[i] = b;
+	}
+	return (s);
+}
