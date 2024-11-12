@@ -1,0 +1,38 @@
+#include "main.h"
+#include "stddef.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *_len - finds the lenght of a string
+ *@str : eafear
+ *Description : /
+ *Return: count
+ */
+
+int _len(char *str)
+{
+	int count = 0;
+
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+
+	return (count);
+}
+
+/**
+ *_strcmp -
+ *@s1 :
+ *@s2 :
+ *Description : /
+ *Return: no return
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	int difference = _len(s1) - _len(s2);
+	return (difference);
+}
