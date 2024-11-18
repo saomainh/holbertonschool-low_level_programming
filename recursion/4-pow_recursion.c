@@ -4,11 +4,12 @@
 #include <stdlib.h>
 
 /**
-*factorial - finds the lenght of a string
-*@n : eafear
-* Description : /
-*Return: count
-*/
+ *_pow_recursion - finds the lenght of a string
+ *@x : eafear
+ *@y : adza
+ *  Description : /
+ *Return: count
+ */
 
 int _pow_recursion(int x, int y)
 {
@@ -21,5 +22,5 @@ int _pow_recursion(int x, int y)
 		return (1);
 	}
 
-	return (x * _pow_recursion(x, y-1));
+	return (x * _pow_recursion(x, y - 1));
 }
