@@ -22,6 +22,6 @@ int _strlen(int count, char *s)
 int _strlen_recursion(char *s)
 {
 	int count = 0;
-	
+
 	return (_strlen(count, s));
 }
