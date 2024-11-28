@@ -5,12 +5,22 @@
 
 /**
  *_sqrt_recursion - finds the lenght of a string
- *@n : eafear
+ *@x : eafear
+ *@y : adza
  *  Description : /
  *Return: count
  */
 
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int x, float y)
 {
-	
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else if (y == 0)
+	{
+		return (1);
+	}
+
+	return (x * _pow_recursion(x, y - 1));
 }
