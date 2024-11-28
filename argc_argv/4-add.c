@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
 *main - finds the lenght of a string
@@ -15,6 +16,7 @@ int main(int argc, char* argv[])
 {
 	int result = 0;
 	int i;
+	unsigned long int x;
 
 	if (argc == 1)
 	{
@@ -23,10 +25,13 @@ int main(int argc, char* argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(*argv[i]))
+		for (x = 0; x < strlen(argv[i]); x++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][x]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		result += atoi(argv[i]);
 	}
