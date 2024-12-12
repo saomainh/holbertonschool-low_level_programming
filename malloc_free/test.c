@@ -17,17 +17,15 @@ char *str_concat(char *s1, char *s2)
     int i;
     bool s2_null = false;
 
-    if (s1 == NULL)
+    while (*s1 != '\0')
     {
-        size = 0;
-    }
-    else
-    {
-        while (*s1 != '\0')
+        if (s1 == NULL)
         {
-            size++;
-            s1++;
+            size = 0;
+            break;
         }
+        size++;
+        s1++;
     }
     if (s2 == NULL)
     {
@@ -62,4 +60,12 @@ char *str_concat(char *s1, char *s2)
         }
     }
     return (array);
+}
+
+int main()
+{
+    char s;
+    s = str_concat("Hello", NULL);
+    printf("%d", s);
+    return (0);
 }
