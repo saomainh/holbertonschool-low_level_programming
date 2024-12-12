@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 /**
-*create_array - finds the lenght of a string
-*@size : eafear
-*@c : jkbkjk
+*_strdup - finds the lenght of a string
+*@str : eafear
 *Description : /
 *Return: count
 */
