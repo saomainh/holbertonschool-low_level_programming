@@ -2,13 +2,34 @@
 #include <stdlib.h>
 #include <string.h>
 
+int count(char *string)
+{
+    int size;
+
+    if (string == NULL)
+    {
+        size = 0;
+    }
+    else
+    {
+        while (*string != '\0')
+        {
+            size++;
+            string++;
+        }
+    }
+
+    string -= size;
+    return (size);
+}
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
     char *array;
     unsigned int unsigned_i;
     int i;
-    int size1 = strlen(s1);
-    unsigned int size2 = strlen(s2);
+    int size1 = count(s1);
+    unsigned int size2 = count(s2);
 
     array = malloc(size1 + 1 + n);
     if (array == NULL)
