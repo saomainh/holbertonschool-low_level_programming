@@ -33,15 +33,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
     array = malloc((size1 + n + 2) * sizeof(char));
 
-    printf("array = %ld, s1 = %d, n = %d ", strlen(array), size1, n);
-
     if (array == NULL)
     {
         return(NULL);
     }
 
     /*copier s1*/
-    for(i = 0; i < size1 + 1; i++)
+    for(i = 0; i <= size1; i++)
     {
         array[i] = s1[i];
     }
@@ -50,9 +48,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     *si n est plus grand ou égal à s2, utiliser tout s2
     *si n = NULL, s2 est une string vide
     */
-    if (n > size2 + 1)
+    if (n > size2)
     {
-        n = size2 + 1;
+        n = size2;
     }
     else if (n == 0)
     {
@@ -64,8 +62,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     /*copier n 1ers bytes de s2*/
     for (unsigned_i = 0; unsigned_i < n; unsigned_i++)
     {
+
         array[unsigned_i + size1] = s2[unsigned_i];
     }
+
+    /*ajouter le null byte à la fin*/
+    array[size1+n+1] = '\0';
 
     return (array);
 }
