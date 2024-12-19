@@ -31,9 +31,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     int size1 = count(s1);
     unsigned int size2 = count(s2);
 
-    array = malloc((size1 + n + 1) * sizeof(char));
+    array = malloc((size1 + n + 2) * sizeof(char));
 
-    printf("s1 = %d, n = %d \n", size1, n);
+    printf("array = %ld, s1 = %d, n = %d ", strlen(array), size1, n);
 
     if (array == NULL)
     {
@@ -64,10 +64,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     /*copier n 1ers bytes de s2*/
     for (unsigned_i = 0; unsigned_i < n; unsigned_i++)
     {
-
         array[unsigned_i + size1] = s2[unsigned_i];
     }
 
-    printf("array = %d", count(array));
     return (array);
 }
