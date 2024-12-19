@@ -65,7 +65,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
         array[unsigned_i + size1] = s2[unsigned_i];
     }
-
+    printf("test");
     array[size1+n+1] = '\0';
 
     return (array);
