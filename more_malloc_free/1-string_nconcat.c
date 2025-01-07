@@ -4,7 +4,7 @@
 
 int count(char *string)
 {
-    int size;
+    int size = 0;
 
     if (string == NULL)
     {
@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     int size1 = count(s1);
     unsigned int size2 = count(s2);
 
-    array = malloc((size1 + n) * sizeof(char));
+    array = malloc((size1 + n + 1) * sizeof(char));
 
     if (array == NULL)
     {
@@ -63,6 +63,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
         array[unsigned_i + size1] = s2[unsigned_i];
     }
+
+    /*adding null terminator*/
+    array[size1 + n] = '\0';
 
     return (array);
 }
