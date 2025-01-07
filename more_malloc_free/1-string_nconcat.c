@@ -41,6 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     /*si s1 et s2 sont null return un tableau vide*/
     if (s1 == NULL && s2 == NULL)
     {
+        array[0] = '\0';
         return(array);
     }
 
@@ -50,8 +51,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
         for (unsigned_i = 0; unsigned_i < n; unsigned_i++)
         {
             array[unsigned_i] = s2[unsigned_i];
-            return (array);
         }
+        array[n] = '\0';
+        return (array);
     }
 
     /*copier s1*/
@@ -70,6 +72,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     }
     else if (n == 0 || s2 == NULL)
     {
+        array[size1] = '\0';
         return (array);
     }
 
