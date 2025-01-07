@@ -2,34 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+int *my_array(int min, int max)
 {
-    char *array;
-    unsigned int i;
+    int *array;
+    int i;
 
-    if (nmemb == 0 || size == 0)
-    {
-        return (NULL);
-    }
-    array = malloc(nmemb * size);
-
+    array = malloc(max * sizeof(int));
     if (array == NULL)
     {
         return (NULL);
     }
 
-    for(i = 0; i < nmemb; i++)
-    {
-        array[i] = 0;
-    }
-
-    return(array);
+    return (array);
 }
 
-int main(void)
+void main()
 {
-    char a;
-    a =  _calloc();
-    printf("%s", a);
-    return(0);
+    int *a;
+
+    a = my_array(3, 8);
+
+    printf("( %ls )\n", a);
+
 }
