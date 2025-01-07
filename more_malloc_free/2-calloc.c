@@ -22,6 +22,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     {
         array[i] = 0;
     }
-    printf("( %s )\n", array);
+
     return(array);
 }
