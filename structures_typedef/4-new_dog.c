@@ -15,16 +15,30 @@ char *_strcpy(char *dest, char *src)
 	return dest;
 }
 
+int _strlen(char *s)
+{
+	int i = 0;
+	int count = 0;
+
+	while (s[i] != s[-1])
+	{
+		count++;
+		i++;
+	}
+
+	return (count);
+}
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
     dog_t *new_dog;
     char *name_cpy;
     char *owner_cpy;
 
-    name_cpy = malloc(strlen(name));
+    name_cpy = malloc(_strlen(name));
     _strcpy(name_cpy, name);
 
-    owner_cpy = malloc(strlen(owner));
+    owner_cpy = malloc(_strlen(owner));
     _strcpy(owner_cpy, owner);
 
     new_dog = malloc(sizeof(dog_t));
