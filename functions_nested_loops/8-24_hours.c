@@ -10,23 +10,43 @@
 
 void jack_bauer(void)
 {
-	int i;
-	int first_digit;
-	int last_digit;
+	int i, j, first_digit, last_digit;
 
-	for (i = 0; i < 23; i++)
-    {
-		first_digit = i;
-		if (first_digit > 10)
+	for (j = 0; j <= 23; j++)
+	{
+		for (i = 0; i <= 59; i++)
 		{
-			while (first_digit >= 10)
+			if (j < 10)
+			{
+				first_digit = 0;
+			}
+			else
+			{
+				first_digit = j;
+				while (first_digit >= 10)
 				{
-					first_digit = first_digit / 10;
+					first_digit /= 10;
 				}
+			}
+			putchar('0' + first_digit);
+			putchar('0' + j % 10);
+			putchar(':');
+			if (i < 10)
+			{
+				first_digit = 0;
+			}
+			else
+			{
+				first_digit = i;
+				while (first_digit >= 10)
+				{
+					first_digit /= 10;
+				}
+			}
+			last_digit = i % 10;
+			putchar('0' + first_digit);
+			putchar('0' + last_digit);
+			putchar('\n');
 		}
-		last_digit = i % 10;
-		putchar('0' + first_digit); 
-		putchar('0' + last_digit);
-		putchar('\n');
 	}
 }
