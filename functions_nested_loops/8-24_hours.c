@@ -28,9 +28,9 @@ void jack_bauer(void)
 					first_digit /= 10;
 				}
 			}
-			putchar('0' + first_digit);
-			putchar('0' + j % 10);
-			putchar(':');
+			_putchar('0' + first_digit);
+			_putchar('0' + j % 10);
+			_putchar(':');
 			if (i < 10)
 			{
 				first_digit = 0;
@@ -44,9 +44,9 @@ void jack_bauer(void)
 				}
 			}
 			last_digit = i % 10;
-			putchar('0' + first_digit);
-			putchar('0' + last_digit);
-			putchar('\n');
+			_putchar('0' + first_digit);
+			_putchar('0' + last_digit);
+			_putchar('\n');
 		}
 	}
 }
