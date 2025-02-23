@@ -1,0 +1,25 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * times_table - Short description, single line
+ * Description: this is a description
+ * Return: Description of the returned value
+ */
+
+void times_table(void);
+{
+	int i;
+	int j;
+
+	for (i = 0; i < 9; i++)
+	{
+		for (j = 0; j < 9; j++)
+		{
+			putchar('0' + i);
+			putchar('0' + j);
+			putchar(',');
+	    }
+	}
+}
