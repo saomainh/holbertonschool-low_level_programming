@@ -4,7 +4,7 @@
 
 /**
  * reset_to_98 - Short description, single line
- * @size: aerfaer
+ * @n: aerfaer
  * Description: this is a description
  * Return: Description of the returned value
  */
