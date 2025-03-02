@@ -19,7 +19,7 @@ void puts2(char *str)
 			str += 2;
 		}
 		else
-	    {
+		{
 			break;
 		}
 	}
