@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * print_triangle - Short description, single line
+ * @size: aerfaer
+ * Description: this is a description
+ * Return: Description of the returned value
+ */
+
+void print_triangle(int size)
+{
+	
+}
