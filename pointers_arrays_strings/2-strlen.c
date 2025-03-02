@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _strlen - Short description, single line
+ * @s: aerfae
+ * Description: this is a description
+ * Return: Description of the returned value
+ */
+
+int _strlen(char *s)
+{
+	int count, i;
+
+	while (s[i] != '\0')
+	{
+		count++;
+		i++;
+	}
+
+	return (count);
+}
