@@ -18,6 +18,15 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
+			if (j > 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				if (i * j < 10)
+				{
+					_putchar(' ');
+				}
+			}
 			first_digit = i * j;
 			if (first_digit >= 10)
 			{
@@ -28,15 +37,6 @@ void times_table(void)
 				_putchar('0' + first_digit);
 			}
 			_putchar('0' + (i * j)  % 10);
-			if (j != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				if (i * j < 10)
-				{
-					_putchar(' ');
-				}
-			}
 		}
 		_putchar('\n');
 	}
